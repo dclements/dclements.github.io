@@ -6,5 +6,5 @@ RUN sudo apt-get -q update && \
 
 USER gitpod
 
-RUN brew install ruby pandoc pandoc-include-code pandoc-plot pandoc-crossref
+RUN brew install pandoc pandoc-include-code pandoc-plot pandoc-crossref
 RUN gem install bundler
