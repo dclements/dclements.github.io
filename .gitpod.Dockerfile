@@ -1,6 +1,8 @@
 FROM gitpod/workspace-full
 
-RUN sudo apt-get -q update && sudo apt-get install -yq texlive inotify-tools && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get -q update && \
+    sudo apt-get install -yq texlive-full inotify-tools && \
+    sudo rm -rf /var/lib/apt/lists/*
 
 USER gitpod
 
