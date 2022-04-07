@@ -1,5 +1,11 @@
-
 tasks:
+  - name: Initialize
+    before: |2
+      cd /workspace/dclements.github.io/docs
+    init: |2
+      bundle update
+      bundle install
+    command: bundle exec jekyll serve
   - name: Terminal
 github:
     prebuilds:
@@ -7,6 +13,10 @@ github:
         branches: true
 image:
     file: .gitpod.Dockerfile
+ports:
+  - port: 4000
+    onOpen: open-browser
+    visibility: private
 vscode:
   extensions:
     - rebornix.ruby
@@ -16,3 +26,4 @@ vscode:
     - ban.spellright
     - notZaki.pandocciter
     - mathiassoeholm.markdown-link-updater
+    - wingrunr21.vscode-ruby

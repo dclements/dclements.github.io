@@ -18,6 +18,7 @@ lang: en
 theme: jekyll-theme-chirpy
 theme_mode: dark
 paginate: 1
+paginate_path: "/posts/page/:num"
 toc: true
 
 avatar:
