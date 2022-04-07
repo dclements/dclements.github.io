@@ -1,10 +1,5 @@
 
 tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
-  - name: LaTeX auto-rebuild
-    command: >
-      while find . -name '*.tex' | xargs inotifywait -qqre modify .; do         latexmk -pdf ;       done
   - name: Terminal
 github:
     prebuilds:
@@ -17,9 +12,6 @@ vscode:
     - rebornix.ruby
     - bierner.markdown-preview-github-styles
     - vscode.markdown-notebook-math
-    - efoerster.texlab
-    - James-Yu.latex-workshop
-    - JeffersonQin.latex-snippets-jeff
     - KnisterPeter.vscode-github
     - ban.spellright
     - notZaki.pandocciter
