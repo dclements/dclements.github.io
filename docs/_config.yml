@@ -3,7 +3,7 @@ tagline: "Better engineering through engineering"
 description: >-
   Misc thoughts on organizing, software, LARP, gender, and everything inbetween.
 jekyll_baseurl: "/"
-domain: dclements.github.io
+domain: blog.clementsd.dev
 url: https://blog.clementsd.dev
 markdown: kramdown
 twitter:
