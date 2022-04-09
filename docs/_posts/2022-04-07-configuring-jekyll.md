@@ -2,7 +2,7 @@
 title:  "Setting up a Blog"
 date:   2022-04-08 12:54:19 +0000
 categories: technology web
-tags: jekyll github
+tags: jekyll github gitpod
 
 layout: post
 twitter: true
@@ -148,4 +148,3 @@ That works reasonably well, so I do a bit of mucking around with the configurati
 Things look good—I can now compile things like $\frac{x:{\mathbf T} \in \Gamma}{\Gamma \vdash x:T}$, so I deploy and call it a day.
 
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">I have abandoned installing jekyll and am now making a geocities website</p>&mdash; zachary (@chetchavat) <a href="https://twitter.com/chetchavat/status/1096290876668739585?ref_src=twsrc%5Etfw">February 15, 2019</a></blockquote>
-

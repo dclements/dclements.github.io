@@ -68,6 +68,11 @@ defaults:
     values:
       image: true
   - scope:
+      path: "favicon.ico"
+    values:
+      image: true
+      swcache: true
+  - scope:
       path: './'
       type: posts
     values:
@@ -95,6 +100,7 @@ defaults:
   - scope:
       path: assets/images/favicons
     values:
+      image: true
       swcache: true
   - scope:
       path: assets/js/dist
