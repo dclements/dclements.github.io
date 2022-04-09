@@ -27,11 +27,10 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
-          repository: ''
+          repository: 'dclements/dclements.github.io'
           branch: 'gh-pages'
           jekyll_src: './docs'
           jekyll_cfg: '_config.yml'
-          jekyll_baseurl: ''
-          bundler_ver: '>=0'
+          bundler_ver: '>=2.3'
           pre_build_commands: ''
           

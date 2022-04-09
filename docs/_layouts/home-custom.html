@@ -1,5 +1,6 @@
 ---
 layout: page
+refactor: true
 # The Home page layout, derived from the chirpy templat (see LICENSE.chirpy)
 ---
 
@@ -14,15 +15,6 @@ layout: page
 
 {% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
 {% assign pinned_num = pinned.size | minus: offset %}
-
-{% if pinned_num > 0 %}
-{% for i in (offset..pinned.size) limit: pinned_num %}
-{% assign posts = posts | push: pinned[i] %}
-{% endfor %}
-{% else %}
-{% assign pinned_num = 0 %}
-{% endif %}
-
 
 <!-- Get default posts -->
 
@@ -42,8 +34,7 @@ layout: page
     </h1>
 
     <div class="post-content">
-      {% include no-linenos.html content=post.content %}
-      {{ content | markdownify }}
+      {{ post.content | markdownify }}
     </div>
 
     <div class="post-meta text-muted d-flex">

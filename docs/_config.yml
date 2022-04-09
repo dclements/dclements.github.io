@@ -2,9 +2,9 @@ title: Organizing Software
 tagline: "Better engineering through engineering"
 description: >-
   Misc thoughts on organizing, software, LARP, gender, and everything inbetween.
-jekyll_baseurl: ""
+jekyll_baseurl: "/"
 domain: dclements.github.io
-url: https://dclements.github.io
+url: https://blog.clementsd.dev
 markdown: kramdown
 twitter:
   username: waterpriciple
