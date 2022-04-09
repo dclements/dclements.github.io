@@ -20,6 +20,7 @@ theme_mode: dark
 paginate: 1
 paginate_path: "/posts/page/:num"
 toc: true
+future: false
 
 avatar:
 
@@ -36,14 +37,14 @@ scholar:
 
 # Build settings
 plugins:
-  - jekyll-feed
-  - jekyll-spaceship
-  - jekyll-remote-theme
-  - kramdown
-  - jekyll-sitemap
   - jekyll-default-layout
+  - jekyll-feed
   - jekyll-optional-front-matter
+  - jekyll-remote-theme
   - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-spaceship
+  - kramdown
  
 # ------------ The following options are not recommended to be modified ------------------
 

@@ -1,11 +1,11 @@
 tasks:
   - name: Initialize
-    before: |2
-      cd /workspace/dclements.github.io/docs
+    before: cd /workspace/dclements.github.io/docs
     init: |2
-      bundle update
       bundle install
-    command: bundle exec jekyll serve
+    command: |2
+      bundle update
+      bundle exec jekyll serve
   - name: Terminal
 github:
     prebuilds:
