@@ -13,15 +13,17 @@ gem "jekyll", "~> 4.1.1"
 gem 'jekyll-theme-chirpy', '~> 5.1'
 
 group :jekyll_plugins do
-  gem 'jekyll-default-layout', '~> 0.1.5'
-  gem "jekyll-feed", "~> 0.12"
+  gem 'jekyll-default-layout', '~> 0.1'
+  gem "jekyll-feed", "~> 0.16"
   gem 'jekyll-optional-front-matter', '~> 0.3.2'
-  gem "jekyll-remote-theme", "~> 0.4.3"
+  gem 'jekyll-regex-replace', '~> 1.1'
   gem 'jekyll-scholar', '~> 7.0'
   gem 'jekyll-sitemap', '~> 1.4'
-  gem 'jekyll-spaceship', '~> 0.10.2'
+  gem 'jekyll-spaceship', '~> 0.10', '>= 0.10.2'
   gem 'kramdown', '~> 2.3', '>= 2.3.2'
 end
+
+gem "webrick", "~> 1.7"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

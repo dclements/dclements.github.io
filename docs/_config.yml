@@ -31,14 +31,19 @@ social:
     - https://www.linkedin.com/in/dhclements
 
 scholar:
-  style: association-for-computing-machinery
+  style: custom
+  bibliography_template: bib
+  bibliography: "**/*.bib{,tex}"
+  bibliography_list_tag: div
+  bibliography_item_tag: p
+  locale: en
 
 # Build settings
 plugins:
   - jekyll-default-layout
   - jekyll-feed
   - jekyll-optional-front-matter
-  - jekyll-remote-theme
+  - jekyll-regex-replace
   - jekyll-scholar
   - jekyll-sitemap
   - jekyll-spaceship
@@ -47,6 +52,8 @@ plugins:
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
+  parse_block_html: false
+  line_width: 80
   syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
@@ -129,6 +136,7 @@ exclude:
   - node_modules
   - package*.json
   - .keep
+  - '*.csl'
 
 jekyll-archives:
   enabled: [categories, tags]

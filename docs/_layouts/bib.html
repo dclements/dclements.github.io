@@ -1,0 +1,25 @@
+---
+---
+
+{% if entry.doi %}
+{% capture doiref %}
+doi: <a href="https://doi.org/{{entry.doi}}" target="_blank" rel="noreferrer noopener">{{entry.doi}}</a>.
+{% endcapture %}
+{% else %}
+{% assign doiref = "" %}
+{% endif %}
+
+{% if entry.url %}
+{% if entry.urldate %}
+{% capture urldateref %}
+; accessed on {{entry.urldate}}
+{% endcapture %}
+{% endif %}
+{% capture urlref %}
+[<a href = "{{entry.url}}" target="_blank" rel="noreferrer noopener">Online</a>{{urldateref | strip}}]
+{% endcapture %}
+{% else %}
+{% assign urlref = "" %}
+{% endif %}
+
+[{{index}}] &nbsp; {{reference}} {{ doiref }} {{ urlref }}
