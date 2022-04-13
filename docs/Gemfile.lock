@@ -125,6 +125,7 @@ DEPENDENCIES
   jekyll-spaceship (~> 0.10, >= 0.10.2)
   jekyll-theme-chirpy (~> 5.1)
   kramdown (~> 2.3, >= 2.3.2)
+  nokogiri (>= 1.13.4)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
