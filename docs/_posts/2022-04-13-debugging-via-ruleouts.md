@@ -9,7 +9,7 @@ layout: post
 
 One of the skills that I use, teach, and consider fundamental to being a good engineer is the idea of a "rule out."  
 
-The idea is basically that, when debugging, you reverse the question from "what could be happening" to "how do I demonstrate that this set of things is not happening."  Not asking "what will prove this theory correct" but rather "what will *rule out* these possibilities?"
+The idea is basically that, when debugging, you reverse the question from "what could be happening" to "how do I demonstrate that this set of things is not happening."  Not asking "what will prove this theory correct" but rather "what will *rule out* these other possibilities?"
 
 The term comes from medicine, where it is a critical component of *differential diagnosis.*
 
@@ -50,9 +50,9 @@ flowchart TD
   gradle{Gradle}
   xor2((XOR))
 
-  hanging --- |It's entering a task,\nso unlikely that\ngradle proper is the cause| gradle
   hanging --- xor1
 
+  xor1 --- |It's entering a task,\nso unlikely that\ngradle proper is the cause| gradle
   xor1 --- xor2
 
   execution{Execution}
