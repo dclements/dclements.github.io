@@ -112,7 +112,7 @@ In any given situation with software a given error could be an almost (countably
 
 ## Why This Works
 
-We have several bias as humans that work against us for debugging:
+We have several biases as humans that work against us for debugging:
 
 1. We tend to view things as more likely culprits that we are less familiar with and tend to overestimate the likelihood of things based on recent events.  This is a form of the *availability heuristic.*
 2. We tend to, on finding a possibility, try to find answers that confirm our hypothesis and reinforce our beliefs, rather than answers that eliminate the hypothesis. This is a form of *confirmation bias.*

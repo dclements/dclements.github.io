@@ -138,6 +138,9 @@ exclude:
   - .keep
   - '*.csl'
 
+google-analytics:
+  id: "G-2PPSJLGZ1F"
+
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
@@ -147,8 +150,23 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-jekyll-spaceship:
+jekyll-spaceship: 
   mathjax-processor:
     src:
       - https://cdn.polyfill.io/v3/polyfill.min.js?features=es6
       - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    svg:
+      fontCache: 'local'
+  plantuml-processor:
+    mode: pre-fetch
+  mermaid-processor:
+    mode: pre-fetch
+    config:
+      theme: dark
+      themeVariables:
+        darkMode: true
+        background: '#1b1b1e'
+        primaryTextColor: '#afb0b1'
+        noteBkgColor: '#1b1b1e'
+        noteTextColor: '#6b747c'
+
