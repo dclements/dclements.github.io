@@ -1,0 +1,64 @@
+---
+---
+
+/*
+  If the number of TAB files has changed, the following variable is required.
+  And it must be defined before `@import`.
+
+  Based on the original from the chirpy theme, see LICENSE.chirpy.
+*/
+$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+
+@import "{{ site.theme }}";
+
+/* append your custom style below */
+
+.label {
+  foreignObject {
+    font-size: 90%;
+    overflow: visible;
+  }
+}
+
+svg {
+  g.edgeLabel {
+    foreignObject {
+      font-size: 90%;
+      overflow: visible;
+    }
+  }
+}
+svg {
+  g.cluster-label {
+    foreignObject {
+      font-size: 90%;
+      overflow: visible;
+    }
+  }
+}
+
+.tag {
+  span {
+    font-family: 'Source Code Pro', sans-serif;
+  }
+}
+
+#archives {
+  .date {
+    &.day {
+      font-family: 'Source Code Pro', sans-serif;
+    }
+  }
+}
+
+#mermaid-svg {
+  .label {
+    color: #afb0b1
+  }
+
+  fill: #1b1b1e
+}
+
+body {
+  font-family: 'Lato', 'Source Code Pro', sans-serif;
+}
