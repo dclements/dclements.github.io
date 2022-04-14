@@ -138,7 +138,9 @@ exclude:
   - .keep
   - '*.csl'
 
-google-analytics:
+google_site_verification: "-BpbC_xRpOJNCukVnjvY3atv6PDwqfO6PiQj7L3Ztec"
+
+google_analytics:
   id: "G-2PPSJLGZ1F"
 
 jekyll-archives:
