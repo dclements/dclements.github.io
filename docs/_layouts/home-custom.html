@@ -1,10 +1,11 @@
 ---
 layout: page
 refactor: true
-# The Home page layout, derived from the chirpy templat (see LICENSE.chirpy)
+# The Home page layout, derived from the chirpy template (see LICENSE.chirpy)
 ---
 
 {% include lang.html %}
+{% include assets-origin.html %}
 
 {% assign pinned = site.posts | where: "pin", "true" %}
 {% assign default = site.posts | where_exp: "item", "item.pin != true and item.hidden != true" %}
@@ -28,7 +29,6 @@ refactor: true
   {% endif %}
 
   {% for post in posts %}
-
     <h1>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h1>
@@ -70,7 +70,6 @@ refactor: true
   </div> <!-- .post-meta -->
 
   {% endfor %}
-
 
   {% if paginator.total_pages > 0 %}
   {% include post-paginator-custom.html %}
