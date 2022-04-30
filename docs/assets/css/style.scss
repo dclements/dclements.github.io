@@ -62,3 +62,14 @@ svg {
 body {
   font-family: 'Lato', 'Source Code Pro', sans-serif;
 }
+
+.hoverover {
+  all: inherit;
+  position: relative;
+  display: inline;
+  border-bottom: 1px dotted lightgrey
+}
+
+.indented {
+  margin-left: 2em;
+}
