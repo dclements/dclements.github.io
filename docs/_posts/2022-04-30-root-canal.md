@@ -131,7 +131,7 @@ The (unfulfilled) idea was that you could have various types of system all livin
 
 This was never followed through with, but it did mean that a lot of `Root` code would end up in sometimes bizarre tools that really didn't need to be running, say, the production user management system.
 
-This was not something that anyone really wanted to keep: it was a vision that never came to fruition, and no one really thought it would ever come to be, but a lot of the desig choices were predicated on this assumption.
+This was not something that anyone really wanted to keep: it was a vision that never came to fruition, and no one really thought it would ever come to be, but a lot of the design choices were predicated on this assumption.
 
 ## So I Set Out To Fix It
 
