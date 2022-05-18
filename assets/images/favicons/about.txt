@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Babylonica
+- Font Author: Copyright 2010 The Babylonica Project Authors (https://github.com/googlefonts/babylonica)
+- Font Source: http://fonts.gstatic.com/s/babylonica/v1/5aUw9_i2qxWVCAE2aHjTqDJ0-VVMoEw.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
